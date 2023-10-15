@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AppBar, Toolbar, Paper, Button, Container, Typography, Stack, TextField, Modal, Box } from '@mui/material';
 
-import image from '../static/images/katAndJohn.jpg';
+// import image from '../static/images/katAndJohn.jpg';
 
 const appStyle = {
   textAlign: 'center',
@@ -10,10 +10,21 @@ const appStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  backgroundImage: `url(${image})`,
+  // backgroundImage: `url(${image})`
+  backgroundColor: '#3457D5',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center'
+}
+
+const appBarStyle = {
+  backgroundColor: '#ADD8E6',
+  color: 'black'
+}
+
+const buttonStyle = {
+  backgroundColor: '#ADD8E6',
+  color: 'black'
 }
 
 const paperStyle = {
@@ -37,8 +48,6 @@ const App = () => {
   const [option2, setOption2] = useState<string>("");
   const [decided, setDecided] = useState("");
   const [modal, setModal] = useState(false);
-
-  console.log(option1);
 
   const decider = () => {
     const max = 2;
@@ -65,10 +74,10 @@ const App = () => {
 
   return (
     <Container sx={appStyle} maxWidth="lg">
-      <AppBar color="secondary">
+      <AppBar sx={appBarStyle}>
         <Toolbar>
           <Typography variant="h6" textAlign="center" >
-            Kat's Decision Maker
+            Caroline's Decision Maker
           </Typography>
         </Toolbar>
       </AppBar>
@@ -97,7 +106,7 @@ const App = () => {
             >
               <Button 
                 variant='contained'
-                color="secondary"
+                sx={buttonStyle}
                 disabled={option1 === "" || option2 === ""}
                 onClick={() => decider()}
               >
