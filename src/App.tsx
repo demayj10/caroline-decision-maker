@@ -11,24 +11,24 @@ const appStyle = {
   flexDirection: 'column',
   justifyContent: 'center',
   // backgroundImage: `url(${image})`
-  backgroundColor: '#3457D5',
+  backgroundColor: '#ADD8E6',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center'
 }
 
 const appBarStyle = {
-  backgroundColor: '#ADD8E6',
+  backgroundColor: '#3457D5',
   color: 'black'
 }
 
 const buttonStyle = {
-  backgroundColor: '#ADD8E6',
+  backgroundColor: '#3457D5',
   color: 'black'
 }
 
 const paperStyle = {
-  margin: "10em 1em 1em",
+  margin: "1em",
   height: "fit-content"
 }
 
