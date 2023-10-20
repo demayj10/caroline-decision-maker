@@ -19,12 +19,12 @@ const appStyle = {
 
 const appBarStyle = {
   backgroundColor: '#3457D5',
-  color: 'black'
+  color: 'white'
 }
 
 const buttonStyle = {
   backgroundColor: '#3457D5',
-  color: 'black'
+  color: 'white'
 }
 
 const paperStyle = {
